@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class playground
+{
+    public static void main(String[] args)
+    {
+    
+        double it = 102.12012;
+             /* It will round to the 6th digit because floats are */
+        char its = '\u2122';
+        System.out.println("HELLO \t Howdy");
+        System.out.println(it);
+        System.out.print("Gato \\ \r sup \u2122");
+        System.out.println(its);
+        System.out.println("Howdy");
+        
+
+        //We bring out the scanner 
+        Scanner in = new Scanner(System.in); 
+
+        System.out.print("What is your name: ");
+        String name = in.nextLine();
+
+        System.out.print("What is your age? ");
+        int age = in.nextInt();
+
+        System.out.print("Hello " + name + "! You are " + age + " years old!");
+        System.out.println();
+
+    }
+}

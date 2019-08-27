@@ -1,0 +1,72 @@
+Java core notes:
+
+1)float's and double's are pretty much the same thing. double's just tend to have
+twice the precision compared to floats (15 decimal places to 6-7 decimal places). Suffixes are introduced here. Such as 
+3.14f for floats and 3.14d for double (precision).
+
+2) NaN means not a number
+3) keyword public is an access modifier. Meaning it can be accessed by other forms
+of the program.
+4)EVERYTHING in the java program must live inside a class. 
+5)Standard naming convention is Uppercase first word. Example: FirstApp
+6)When compiling a java file for the first time it creates a bytecode of the class with the class extension
+7)object.method(parameter). Example; System.out.println("Yo");
+8)There are ONLY METHODS in java. There are not functions. C has only functions. So this is the major differance for me when it comes python
+and Java.
+9)Even if the method has no parameters it must still have parantheses to close it. Example:
+    System.out.println();
+10)methods println() and print() are the same except println() creates a new line.
+
+11) Arguments: Generally using multiple parameters are called arguments.
+12) Float numbers will always be considered Double because floats need a f suffix
+    example: float name = 10.2342F
+13) Its recomended not to use char types only when manuplating UTF-16 Code
+13) You can declared multiple variables in Java like this: int j,k; /*Both are integers*/ But is not recomened as it is much easier to read .
+14) Some programmers prefer to place an 'a' in front of a variable. So type then a+variable. Example: Box aBox;
+
+15) final is a sytax that denotes a constant in java. Meaning it will retain its value once and for all and will not change.
+    example: 
+    public class Constants 
+    {
+        public static void main(String[] args)
+        {
+            double paperHeight = 11
+            double paperWidth = 8.5;
+            final double CM_PER_INCH = 2.54;
+            double paperWidth size in centimeters: "
+                + paperWidth * CM_PER_INCH + " by " + paperHeight * CM_PER_INCH);
+
+            //final double CM_PER_INCH; is used as the conastant 
+
+or 
+
+    public class Constants2
+    {
+        public static final double CM_PER_INCH = 2.54; /*constants can be placed in classes called class constants*/
+        public static void main(String[] args)
+        {
+            double paperWidth = 8.5;
+            double paperHeight = 11;
+            double paperWidth size in centimeters: "
+                + paperWidth * CM_PER_INCH + " by " + paperHeight * CM_PER_INCH);
+        }
+    }
+        //public static final double CM_PER_INCH; is used as the constant
+16) Remember that the class constant is outside of the method environment so it can be use for various other methods in this class  
+/* ------------------------------------------------------------------------------------------------*/
+
+
+17) For strings: 
+Escape Sequence->   Name->          Unicode->            
+    \b              Backspace       \u0008
+    \t              Tab             \u0009
+    \n              linefeed        \u000a
+    \r              carriage return \u000d 
+    \"              Double Quote    \u0022
+    \'              Single Quote    \u0027 
+    \\              Backslash       \u005c
+18) CONVERTING JAVA FILES TO CLASSES TO EXECUTABLE JAR FILES IN TERMINAL:
+        javac -d ../Classes *.java
+                                                       //Create a txt file called 'manifest' with the Main-Class defined
+        Main-Class: WhateverMaineClassIs               //Main-Class: Test
+        jar -cvmf manifest.txt WhateverNameYouWantOnYourJarFile.jar *.class //Hence why he called it manifest, its being called
