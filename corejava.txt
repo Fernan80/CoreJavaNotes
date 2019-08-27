@@ -1,4 +1,5 @@
-Java core notes:
+//The purpose of this file is pretty much taking notes from the pdf file of core java
+//this is also shared between to PCs 
 
 1)float's and double's are pretty much the same thing. double's just tend to have
 twice the precision compared to floats (15 decimal places to 6-7 decimal places). Suffixes are introduced here. Such as 
