@@ -27,5 +27,22 @@ public class playground
         System.out.print("Hello " + name + "! You are " + age + " years old!");
         System.out.println();
 
+        double x = 9.999;
+        int nx = (int) x;
+        System.out.println(nx);
+
+        double y = 9.56;
+        double ny = (double) Math.round(y);
+        System.out.println(ny);
+
+        
+
+        
+
+        
+
+        
+
+
     }
 }

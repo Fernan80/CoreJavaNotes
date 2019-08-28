@@ -71,3 +71,35 @@ Escape Sequence->   Name->          Unicode->
                                                        //Create a txt file called 'manifest' with the Main-Class defined
         Main-Class: WhateverMaineClassIs               //Main-Class: Test
         jar -cvmf manifest.txt WhateverNameYouWantOnYourJarFile.jar *.class //Hence why he called it manifest, its being called
+19)strictfp stands for Strict Floating points: Usually placed on a method or all its methods
+to keep it strictly on floating computation.
+        Example:     public static strictfp void main(String[] args)
+
+
+////////MATH
+
+
+20) You avoid Math Prefix by add a static import: 
+            import static java.lang.Math.*;
+        example:
+            System.out.println(
+        instead of the basic method such as:
+            double y = Math.Sqrt(PI);
+            System.out.println("The Square root of \u03C0 is " + y);
+21) 
+    double x = 9.997;
+    int nx = (int) x;// This will print 9 and cut off of the fractional part
+
+if you want to round to its actual number you need to add a function:
+
+    double x = 9.997;
+    int nx = (int) Math.round(x); //rounds to 10
+
+22) Remember that converting types have limits. Byte range is from -128 to 127. 
+If calling a byte(300) you will get 44 instead because its past it limit.
+
+23) 
+
+
+
+
