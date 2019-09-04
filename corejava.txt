@@ -98,7 +98,24 @@ if you want to round to its actual number you need to add a function:
 22) Remember that converting types have limits. Byte range is from -128 to 127. 
 If calling a byte(300) you will get 44 instead because its past it limit.
 
-23) 
+23) import statics are a way to not apply the function to the Code. For example if we were able to
+ import static java.System.*; we wouldn't have to type in System everytime.
+    out.println("Hello");
+    //////
+    import static java.lang.Math.*;
+
+23-b) Its important to understand that Math.sqrt() method is not an object. println() is a method but is attached to
+ System.out thus is a object. Math.sqrt() isn't attached so it counts as a static method. 
+ Math.sqrt() = class
+ Math. = class 
+ sqrt() = method
+ System.out. = object
+ 
+ 24) x += 4; is the same thing such as x = x + 4;
+
+
+ Stopped at page 51
+
 
 
 

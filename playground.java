@@ -1,4 +1,5 @@
 import java.util.*;
+import static java.lang.Math.*; //static 
 
 public class playground
 {
@@ -34,7 +35,12 @@ public class playground
         double y = 9.56;
         double ny = (double) Math.round(y);
         System.out.println(ny);
+        
+        System.out.println("Apperand examples of coversions: "  + 9 + 2.43);
 
+        
+        System.out.println("The square root of pi is " + Math.sqrt(PI));
+        
         
 
         
