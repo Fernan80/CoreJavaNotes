@@ -113,8 +113,20 @@ If calling a byte(300) you will get 44 instead because its past it limit.
  
  24) x += 4; is the same thing such as x = x + 4;
 
+24) When using Scanner (java's way to input) you must close it or it will create a resourse leak:
+    Scanner in = new Scanner(System.in);
 
- Stopped at page 51
+    System.out.print("Hello what is your name? ");
+    String name = in.nextline();
+
+    System.out.print("May I ask, what is your age? ");
+    int age = in.nextInt();
+    in.close(); //Make sure to always close your variable
+
+    System.out.print(" Hello  " + name + "! You are currently " + age +"!")
+    System.out.println();
+
+ Stopped at page 61 
 
 
 

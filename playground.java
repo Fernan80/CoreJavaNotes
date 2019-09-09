@@ -6,9 +6,10 @@ public class playground
     public static void main(String[] args)
     {
     
-        double it = 102.12012;
+        
              /* It will round to the 6th digit because floats are */
-        char its = '\u2122';
+        char its = "\u2122";
+        double it = 102.12012;
         System.out.println("HELLO \t Howdy");
         System.out.println(it);
         System.out.print("Gato \\ \r sup \u2122");
@@ -17,15 +18,17 @@ public class playground
         
 
         //We bring out the scanner 
-        Scanner in = new Scanner(System.in); 
+        Scanner in = new Scanner(System.in); //System probably means that it will 
+        //take input from the terminal 
 
-        System.out.print("What is your name: ");
+        System.out.print("Hello what is your name? ");
         String name = in.nextLine();
 
-        System.out.print("What is your age? ");
+        System.out.print("May I ask, what is your age? ");
         int age = in.nextInt();
+        in.close();  //you close your in so no more resource leak
 
-        System.out.print("Hello " + name + "! You are " + age + " years old!");
+        System.out.print("Hello  " + name + "! You are currently " + age +" years old!");
         System.out.println();
 
         double x = 9.999;
@@ -39,8 +42,9 @@ public class playground
         System.out.println("Apperand examples of coversions: "  + 9 + 2.43);
 
         
-        System.out.println("The square root of pi is " + Math.sqrt(PI));
-        
+        System.out.println("The square root of pi is " + sqrt(PI)); 
+        //Because of the static import we wouldn't add the Math class anymore for meethod
+        //      
         
 
         
