@@ -8,7 +8,7 @@ public class playground
     
         
              /* It will round to the 6th digit because floats are */
-        char its = "\u2122";
+        char its = '\u2122';
         double it = 102.12012;
         System.out.println("HELLO \t Howdy");
         System.out.println(it);
@@ -33,7 +33,7 @@ public class playground
 
         double x = 9.999;
         int nx = (int) x;
-        System.out.println(nx);
+        System.out.print(nx);
 
         double y = 9.56;
         double ny = (double) Math.round(y);
