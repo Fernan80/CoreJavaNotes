@@ -1,4 +1,5 @@
 import java.util.*;
+
 import static java.lang.Math.*; //static 
 
 public class playground
@@ -43,10 +44,12 @@ public class playground
 
         
         System.out.println("The square root of pi is " + sqrt(PI)); 
-        //Because of the static import we wouldn't add the Math class anymore for meethod
+        //Because of the static import we wouldn't add the Math class anymore for method
         //      
         
-
+        String name2 = "jacobs";
+        double age2 = 7.23;
+        System.out.printf("Hello, %s. You need about %2.2f gallons of gas to fill it up! ", name2, age2);
         
 
         

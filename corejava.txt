@@ -111,9 +111,9 @@ If calling a byte(300) you will get 44 instead because its past it limit.
  sqrt() = method
  System.out. = object
  
- 24) x += 4; is the same thing such as x = x + 4;
+24) x += 4; is the same thing such as x = x + 4;
 
-24) When using Scanner (java's way to input) you must close it or it will create a resourse leak:
+25) When using Scanner (java's way to input) you must close it or it will create a resourse leak:
     Scanner in = new Scanner(System.in);
 
     System.out.print("Hello what is your name? ");
@@ -126,7 +126,9 @@ If calling a byte(300) you will get 44 instead because its past it limit.
     System.out.print(" Hello  " + name + "! You are currently " + age +"!")
     System.out.println();
 
- Stopped at page 61 
+26)
+
+ Stopped at page 83
 
 
 
